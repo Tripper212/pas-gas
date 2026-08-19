@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download the PAS GAS Audio Unit and VST3 plug-ins for macOS.">
+  <link rel="icon" href="assets/pas-gas-icon.png" type="image/png">
+  <title>PAS GAS — Downloads</title>
+  <style>
+    @font-face {
+      font-family: "PAS Space";
+      src: url("assets/PAS-Space-Font.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: dark;
+      --page: #171918;
+      --panel: #252825;
+      --panel-soft: #2d302d;
+      --line: #555a55;
+      --text: #f2efe5;
+      --muted: #b9b9ae;
+      --amber: #e1a936;
+      --red: #a84235;
+      --red-hover: #bf5143;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(225, 169, 54, 0.11), transparent 42rem),
+        var(--page);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .shell {
+      width: min(920px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 74px 0 46px;
+    }
+
+    header {
+      padding: 46px 30px 42px;
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(145deg, #303431, #222522);
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+    }
+
+    .brand {
+      margin: 0;
+      color: #fff;
+      font-family: "PAS Space", monospace;
+      font-size: clamp(3.1rem, 11vw, 7rem);
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .byline {
+      margin: 18px 0 0;
+      color: var(--amber);
+      font-size: 0.77rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+
+    main { padding: 54px 0 10px; }
+
+    h2 {
+      margin: 0 0 24px;
+      font-family: "PAS Space", monospace;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+    }
+
+    p { margin: 0 0 18px; }
+
+    .download-card,
+    .instructions {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+    }
+
+    .download-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      padding: 28px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      border: 1px solid #d06656;
+      border-radius: 10px;
+      background: var(--red);
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 150ms ease, transform 150ms ease;
+    }
+
+    .button:hover {
+      background: var(--red-hover);
+      transform: translateY(-1px);
+    }
+
+    .requirement {
+      margin: 24px 0 38px;
+      padding: 20px 22px;
+      border-left: 4px solid var(--amber);
+      border-radius: 5px 12px 12px 5px;
+      background: rgba(225, 169, 54, 0.09);
+    }
+
+    .requirement strong { color: #ffd77d; }
+
+    .instructions { padding: 30px; }
+
+    ol {
+      margin: 12px 0 26px;
+      padding-left: 1.35rem;
+    }
+
+    li { margin: 0.55rem 0; padding-left: 0.35rem; }
+
+    code {
+      padding: 0.15rem 0.35rem;
+      border-radius: 5px;
+      background: #171917;
+      color: #f5d18a;
+      font-size: 0.88em;
+      overflow-wrap: anywhere;
+    }
+
+    .checksum {
+      color: var(--muted);
+      font-size: 0.82rem;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid #3c403c;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    footer a { color: var(--text); }
+
+    @media (max-width: 640px) {
+      .shell { padding-top: 24px; }
+      header { padding: 38px 18px 34px; border-radius: 18px; }
+      .download-card { grid-template-columns: 1fr; }
+      .button { width: 100%; }
+      .instructions { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1 class="brand">PAS GAS</h1>
+      <p class="byline">LunaSound</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Downloads</h2>
+
+        <div class="download-card">
+          <div>
+            <h3>PAS GAS AU + VST3 installer</h3>
+            <p class="meta">Version 2.0.53 · Apple-silicon Mac · macOS 12 or later · 4 MB</p>
+            <p class="meta">Apple Developer ID signed, notarized and stapled.</p>
+          </div>
+          <a class="button" href="downloads/PAS-GAS-v2.0.53-AU-VST3-Installer.pkg" download>Download .pkg</a>
+        </div>
+
+        <div class="requirement">
+          <strong>Mac App Store purchase required.</strong>
+          These plug-ins require the PAS GAS standalone application to have been purchased and installed through the Mac App Store on the same Mac.
+        </div>
+      </section>
+
+      <section class="instructions" aria-labelledby="install-heading">
+        <h2 id="install-heading">Installing</h2>
+        <ol>
+          <li>Purchase and install the PAS GAS standalone application from the Mac App Store.</li>
+          <li>Open the standalone application once, then close it.</li>
+          <li>Download and open the AU + VST3 installer above.</li>
+          <li>Follow the macOS Installer steps. An administrator password may be required.</li>
+          <li>Open your DAW. If it was already running during installation, restart it once so it can scan the new plug-ins.</li>
+          <li>Load <strong>PAS GAS</strong> from your DAW's Audio Unit or VST3 instrument list. The plug-in checks the Mac App Store purchase automatically.</li>
+        </ol>
+
+        <h3>Installed locations</h3>
+        <p>
+          Audio Unit: <code>/Library/Audio/Plug-Ins/Components/PAS GAS.component</code><br>
+          VST3: <code>/Library/Audio/Plug-Ins/VST3/PAS GAS.vst3</code>
+        </p>
+
+        <h3>Compatibility</h3>
+        <p>Apple-silicon Mac, macOS 12 Monterey or later, and an Apple-silicon AU or VST3 instrument host. Ableton Live and Logic Pro are supported.</p>
+
+        <p class="checksum"><strong>SHA-256:</strong> 55b75de81f7f6b0ebd93e1bf27aaf7562c37f278a7d0726ed32539fa733221b2</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Published by LunaSound · <a href="mailto:sidecardj001@gmail.com">sidecardj001@gmail.com</a> · <a href="privacy.html">Privacy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
